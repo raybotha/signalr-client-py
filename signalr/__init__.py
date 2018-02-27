@@ -1,7 +1,10 @@
 from gevent import monkey
 
-monkey.patch_socket()
-monkey.patch_ssl()
+if monkey.is_module_patched('socket') is False:
+    monkey.patch_socket()
+
+if monkey.is_module_patched('ssl') is False:
+    monkey.patch_socket()
 
 from ._connection import Connection
 

@@ -1,4 +1,10 @@
 from gevent import monkey
+import sys
+
+try:
+    del sys.modules['ssl']
+except KeyError:
+    pass
 
 if monkey.is_module_patched('socket') is False:
     monkey.patch_socket()

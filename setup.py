@@ -12,7 +12,7 @@ setup(
     version='0.0.7.2',
     description='Simple SignalR client for Python',
     long_description=long_description,
-    url='https://github.com/TargetProcess/signalr-client-py',
+    url='https://github.com/slazarov/signalr-client-py',
     author='Taucraft Limited',
     author_email='info@taucraft.com',
     license='Apache',

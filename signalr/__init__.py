@@ -1,4 +1,5 @@
 from gevent import monkey
+import sys
 
 try:
     del sys.modules['ssl']

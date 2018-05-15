@@ -8,7 +8,7 @@ with io.open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
    long_description = f.read()
 
 setup(
-    name='signalr-client',
+    name='signalr-client-slazarov',
     version='0.0.7.2',
     description='Simple SignalR client for Python',
     long_description=long_description,
